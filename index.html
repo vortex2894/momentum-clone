@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Momentum</title>
+        <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/css/owfont-regular.css">
+        <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="btnBox">
+            <button class="backgroundСhange">background change</button>
+            <button class="backgroundAuto">background auto</button>
+            <button class="quoteChange">quote change</button>
+            <input type="range" id="blur" min="0" max="5" value="0" step="1" oninput="rangeBlur()">
+        </div>
+        <div class="alert"></div>
+        <header>
+        </header>
+        <main>
+            <div class="userBox">
+                <span class="welcome">
+                    <p>Hi</p>
+                </span>
+                <span class="yourName inputText" contenteditable placeholder="Your name?"></span>
+            </div>
+            <div class="timeBox">
+                <div id="time">
+                    12:60:15
+                </div>
+                <div id="date">
+                    20 oct. 2020
+                </div>
+            </div>
+            <div class="taskBox">
+                <div class="goalText">Goal today:</div>
+                <div class="taskToday inputText" contenteditable placeholder="Is your goal for today?"></div>
+            </div>
+            <div class="weatherBox">
+                <div class="city inputText" contenteditable placeholder="You from?">Minsk</div>
+                <!-- <i style="font-size: 4em;" class="weather-icon owf"></i> -->
+                <div class="weatherIcon" style="height: 50px; width: 50px; margin: auto;" >
+
+                </div>
+                <div class="weatherParam">
+                    <div class="temperature"></div>
+                    <div class="weather-description"></div>
+                    <div class="wind"></div>
+                    <div class="humidity"></div>
+                </div>
+            </div>
+        </main>
+        <figure class="quoteBox">
+            <blockquote>
+                You were not born a winner, and you were not born a loser. You are what you make yourself be.
+            </blockquote>
+            <figcaption>
+                Lou Holtz
+            </figcaption>
+        </figure>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
